@@ -1,0 +1,5 @@
+*.extract.txt
+*.crop.*.png
+target/
+*.sw*
+

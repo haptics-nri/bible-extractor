@@ -1,0 +1,21 @@
+[package]
+name = "extract"
+version = "0.1.0"
+authors = ["Hogshead <hogshead@alexburka.com>"]
+
+[dependencies]
+clap = "2"
+closet = "0.2"
+error-chain = "0.11.0-rc.2"
+if_chain = "0.1"
+ignore = "0.2"
+itertools = "0.6"
+lazy_static = "0.2"
+num_cpus = "1"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+
+[replace]
+"ignore:0.2.2" = { git = "git://github.com/haptics-nri/ripgrep", branch = "group-defaults" }
+
