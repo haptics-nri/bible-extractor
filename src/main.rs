@@ -96,7 +96,7 @@ fn try_main() -> Result<()> {
 
         let errors = Arc::new(Mutex::new(vec![]));
         WalkBuilder::new(DATADIR)
-            .defaults(false)
+            .standard_filters(false)
             .threads(num_cpus::get())
             .types(TypesBuilder::new()
                    .add_defaults()
